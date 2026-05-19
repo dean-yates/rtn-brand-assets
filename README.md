@@ -20,6 +20,19 @@ Nine transparent-background PNGs across three variants and three sizes. Source: 
 
 Sizes per variant: full (2560x1345), 1200px wide (1200x630), 600px wide (600x315).
 
+## Icons
+
+34 hand-drawn-style SVG icons in Ledger Blue (`#2B4A7C`), rendered with rough.js to match the cover artwork. 64×64 viewBox, single-pass strokes, slug-cased filenames.
+
+| Folder | Count | Use on |
+|---|---|---|
+| `icons/teamspace/` | 7 | Notion teamspace home pages and sidebar |
+| `icons/database/` | 7 | Notion database titles |
+| `icons/wiki/` | 10 | Top-level wiki sections |
+| `icons/record/` | 10 | Individual records inside databases |
+
+Notion accepts SVG icon uploads directly. The accent blue is baked in — for a neutral variant, find-and-replace `#2B4A7C` with `#1B1A17` (text). See `icons/README.md` for regeneration settings and known limitations.
+
 ## Rules
 
 - Never stretch, distort, recolour outside the three variants, add effects, or use below 80px wide.
@@ -27,4 +40,4 @@ Sizes per variant: full (2560x1345), 1200px wide (1200x630), 600px wide (600x315
 
 ## License
 
-© 2026 RTN Digital Ltd. “Run The Numbers” and the RTN logo are registered trademarks (Company No. 16200602). Public hosting for technical purposes only; use requires permission.
+© 2026 RTN Digital Ltd. "Run The Numbers" and the RTN logo are registered trademarks (Company No. 16200602). Public hosting for technical purposes only; use requires permission.
