@@ -1,0 +1,22 @@
+name: Lint DESIGN.md
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'DESIGN.md'
+      - '.github/workflows/lint-design-md.yml'
+  pull_request:
+    paths:
+      - 'DESIGN.md'
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Lint DESIGN.md
+        run: npx --yes @google/design.md lint DESIGN.md
