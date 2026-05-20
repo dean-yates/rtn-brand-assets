@@ -1,8 +1,10 @@
 # RTN Brand Assets
 
-Public hosting for Run The Numbers® brand assets, referenced across rtn.digital, the RTN Notion workspace, and automated deliverables.
+Canonical home for the Run The Numbers® brand system. The full spec lives in [`DESIGN.md`](./DESIGN.md) in this repo (raw URL: <https://raw.githubusercontent.com/dean-yates/rtn-brand-assets/main/DESIGN.md>). This repo also hosts the visual files — logos, icons, covers — referenced across rtn.digital, the RTN Notion workspace, and automated deliverables.
 
-The canonical brand spec lives in the private RTN Notion workspace. This repo only hosts the visual files.
+> **Canonical source.** `DESIGN.md` in this repo is the single source of truth for the RTN brand system. The `rtn-branding` skill in `dean-yates/rtn-cowork` is a fast-loading cache of this spec; if anything in the skill contradicts `DESIGN.md`, the canonical wins.
+
+Moved from Notion to GitHub on 20 May 2026. The old Notion `DESIGN.md` sub-page in the RTN Brand Guide teamspace is now a redirect stub pointing here.
 
 ## V2 Ledger design system (13 May 2026)
 
@@ -36,7 +38,7 @@ Notion accepts SVG icon uploads directly. The accent blue is baked in — for a 
 ## Rules
 
 - Never stretch, distort, recolour outside the three variants, add effects, or use below 80px wide.
-- Full spec in the RTN Notion workspace.
+- Full spec in [`DESIGN.md`](./DESIGN.md).
 
 ## License
 
