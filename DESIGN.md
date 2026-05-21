@@ -207,7 +207,7 @@ Spacing follows an 8px progression (xs 4 / sm 8 / md 16 / lg 24 / xl 32 / 2xl 48
 
 ## Shapes
 
-Soft corners, not sharp. The logo itself is a rounded rectangle — corners elsewhere follow the same instinct.
+Soft corners, not sharp. The favicon container is a rounded rectangle — corners elsewhere follow the same instinct.
 
 - `rounded.sm` (4px) — buttons, inputs, small chips, table corners.
 - `rounded.md` (8px) — cards, callout boxes, media frames.
@@ -233,23 +233,35 @@ Icons: simple line-based only, stroke weight 1.5-2px, in `{colors.accent}` or `{
 
 ## Logo
 
-The RTN mark is the three letters "RTN" set in Fraunces — the wordmark introduced in the 21 May 2026 redesign. It supersedes the V1 green spelled-out "Run The Numbers®" mark and the interim V2 PNG variants. Three colour variants cover every surface the brand appears on. Always use a logo file — never a text placeholder.
+The V2 logo system is a single stacked lockup. "RTN" set big in Fraunces display cut (opsz 144, weight 500), with "RUN THE NUMBERS®" set small underneath in Geist Mono uppercase, generously tracked (+200 to +250). RTN cap height roughly 5x the descriptor cap height. Optical spacing between lines about half the descriptor cap height. The ® symbol lives on "RUN THE NUMBERS", not on "RTN" — only the full registered string is protected. No border, no container shape.
 
-Files (SVG, fixed aspect 5047×1581 / 3.19:1):
+Canonical decision record: [Logo design — V2 wordmark (decided)](https://www.notion.so/3678c4a62c3b8181b8a9d5187a2562c4) (Notion). If anything here drifts from that page, Notion wins.
 
-- `RTN-Wordmark-Blue.svg` (`#2B4A7C`) — for light/cream backgrounds (canvas, surface). Default.
-- `RTN-Wordmark-Cream.svg` (`#FAF7F2`) — for dark backgrounds (accent-deep navy covers, closing slides, near-black ink panels).
-- `RTN-Wordmark-Ink.svg` (`#1B1A17`) — for monochrome contexts (single-colour print, plain correspondence).
+### Asset structure
 
-SVG scales cleanly at every size; export to PNG at the size needed if a tool requires raster.
+The SVG assets contain only the RTN glyphs — the recognition mark. The descriptor is rendered live as type on surfaces that have room for it. Three colour variants:
 
-Canonical URLs (hosted on GitHub):
+- `rtn-wordmark-ink.svg` (`#1B1A17`) — Warm Ink, default for Canvas / light surfaces (everyday version)
+- `rtn-wordmark-blue.svg` (`#2B4A7C`) — Ledger Blue, brand-forward placement, hero sections, primary marketing surfaces
+- `rtn-wordmark-cream.svg` (`#FAF7F2`) — Canvas Cream, reversed-out on Ledger Blue, Warm Ink, or photographic backgrounds
 
-- Blue:  `https://raw.githubusercontent.com/dean-yates/rtn-brand-assets/main/logos/RTN-Wordmark-Blue.svg`
-- Cream: `https://raw.githubusercontent.com/dean-yates/rtn-brand-assets/main/logos/RTN-Wordmark-Cream.svg`
-- Ink:   `https://raw.githubusercontent.com/dean-yates/rtn-brand-assets/main/logos/RTN-Wordmark-Ink.svg`
+All three sit in `logo-redesign/svg/` of this repo. Canonical raw URLs:
 
-Placement:
+- Ink:   `https://raw.githubusercontent.com/dean-yates/rtn-brand-assets/main/logo-redesign/svg/rtn-wordmark-ink.svg`
+- Blue:  `https://raw.githubusercontent.com/dean-yates/rtn-brand-assets/main/logo-redesign/svg/rtn-wordmark-blue.svg`
+- Cream: `https://raw.githubusercontent.com/dean-yates/rtn-brand-assets/main/logo-redesign/svg/rtn-wordmark-cream.svg`
+
+### When to use the lockup vs the monogram
+
+Use the full composed lockup (RTN + descriptor) on hero sections, document covers, presentation title slides, large marketing surfaces — anywhere the descriptor is legible at its rendered size. Implement as live HTML/CSS using Fraunces + Geist Mono webfonts, not as a flattened SVG, so the descriptor stays inside the type system and reflows with context.
+
+Use the monogram SVG alone (just RTN) on nav bars, footers, small interface placements, embroidery, app-icon contexts — anywhere the descriptor would be illegible or visually cluttered. Below roughly 32px wordmark height, always drop the descriptor.
+
+### Favicon
+
+Full "RTN" letters in Canvas cream on a Ledger Blue rounded square. Not a lone R (reads as any R-brand at favicon scale — Reddit, Roblox, R Studio, Rolls Royce). All three letters pin the brand. Two cuts: small-cut (16-32px) with letterforms re-cut tighter to stop bleeding, and display-cut (64-180px+) with proper Fraunces display forms. Still being produced — file paths will land in `logo-redesign/svg/` when done.
+
+### Placement
 
 - Title/cover slide: upper-third, centred or left-aligned, 1.5-2.5" wide.
 - Content slide: bottom-right corner, 0.8-1.2" wide, 100% opacity.

@@ -10,17 +10,21 @@ Moved from Notion to GitHub on 20 May 2026. The old Notion `DESIGN.md` sub-page 
 
 Primary accent: Ledger Blue `#2B4A7C`. Dark surface `#142544`. Canvas `#FAF7F2` (warm cream, never pure white). Text `#1B1A17` (warm near-black, never pure black). Replaces V1 (green / gunmetal / Nourd).
 
-## Logo files
+## Logo
 
-Three transparent-background SVGs of the RTN wordmark (21 May 2026 redesign). Source: "RTN" hand-set in Fraunces, finalised after the logo-redesign exploration and signed off as canonical. SVG keeps the mark crisp at every size — no fixed PNG exports.
+V2 wordmark — decision recorded in Notion: [Logo design — V2 wordmark (decided)](https://www.notion.so/3678c4a62c3b8181b8a9d5187a2562c4). The mark is a single stacked lockup of "RTN" in Fraunces display cut with "RUN THE NUMBERS®" tracked underneath in Geist Mono. The SVG assets contain only the RTN portion — the descriptor is rendered live as type when room allows.
 
-| Variant | Hex | Use on |
+Canonical files live in [`logo-redesign/svg/`](./logo-redesign/svg/):
+
+| File | Hex | Use on |
 |---|---|---|
-| Blue | `#2B4A7C` | Warm cream / white surfaces. Default. |
-| Cream | `#FAF7F2` | Dark surfaces (accent-deep navy, near-black ink) |
-| Ink | `#1B1A17` | Monochrome contexts (single-colour print, plain correspondence) |
+| `rtn-wordmark-ink.svg` | `#1B1A17` | Warm Ink — default for Canvas / light surfaces |
+| `rtn-wordmark-blue.svg` | `#2B4A7C` | Ledger Blue — brand-forward, hero sections, primary marketing |
+| `rtn-wordmark-cream.svg` | `#FAF7F2` | Canvas Cream — reversed-out on Ledger Blue, Warm Ink, or photographs |
 
-Aspect ratio: 5047×1581 (3.19:1). Export to PNG at the size needed if a tool requires raster.
+See [`logo-redesign/README.md`](./logo-redesign/README.md) for the working summary and outstanding refinement items, and [`logo-redesign/test-bench.html`](./logo-redesign/test-bench.html) ([live preview](https://htmlpreview.github.io/?https://github.com/dean-yates/rtn-brand-assets/blob/main/logo-redesign/test-bench.html)) for every variant rendered against the real V2 type system.
+
+The favicon (RTN on a Ledger Blue rounded square, two cuts) is a separate asset and still being produced.
 
 ## Icons
 
