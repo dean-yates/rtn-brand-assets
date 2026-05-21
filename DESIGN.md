@@ -233,23 +233,21 @@ Icons: simple line-based only, stroke weight 1.5-2px, in `{colors.accent}` or `{
 
 ## Logo
 
-The RTN mark is "RTN" in bold geometric type inside a rounded rectangle. Three colour variants cover every surface the brand appears on. Always use a logo file — never a text placeholder.
+The RTN mark is the three letters "RTN" set in Fraunces — the wordmark introduced in the 21 May 2026 redesign. It supersedes the V1 green spelled-out "Run The Numbers®" mark and the interim V2 PNG variants. Three colour variants cover every surface the brand appears on. Always use a logo file — never a text placeholder.
 
-Files:
+Files (SVG, fixed aspect 5047×1581 / 3.19:1):
 
-- `RTN-Logo-Blue.png` — for light/cream backgrounds (canvas, surface). Default.
-- `RTN-Logo-White.png` — for dark backgrounds (accent-deep covers, closing slides, section dividers).
-- `RTN-Logo-Dark.png` — for monochrome contexts (single-colour print, plain correspondence).
+- `RTN-Wordmark-Blue.svg` (`#2B4A7C`) — for light/cream backgrounds (canvas, surface). Default.
+- `RTN-Wordmark-Cream.svg` (`#FAF7F2`) — for dark backgrounds (accent-deep navy covers, closing slides, near-black ink panels).
+- `RTN-Wordmark-Ink.svg` (`#1B1A17`) — for monochrome contexts (single-colour print, plain correspondence).
 
-Each variant is also available at 1200px wide and 600px wide (e.g. `RTN-Logo-Blue-1200.png`).
+SVG scales cleanly at every size; export to PNG at the size needed if a tool requires raster.
 
 Canonical URLs (hosted on GitHub):
 
-- Blue:    `https://raw.githubusercontent.com/dean-yates/rtn-brand-assets/main/logos/RTN-Logo-Blue.png`
-- White:   `https://raw.githubusercontent.com/dean-yates/rtn-brand-assets/main/logos/RTN-Logo-White.png`
-- Dark:    `https://raw.githubusercontent.com/dean-yates/rtn-brand-assets/main/logos/RTN-Logo-Dark.png`
-
-Sized variants follow the same pattern with `-1200` or `-600` suffix before the `.png` (e.g. `RTN-Logo-Blue-1200.png`).
+- Blue:  `https://raw.githubusercontent.com/dean-yates/rtn-brand-assets/main/logos/RTN-Wordmark-Blue.svg`
+- Cream: `https://raw.githubusercontent.com/dean-yates/rtn-brand-assets/main/logos/RTN-Wordmark-Cream.svg`
+- Ink:   `https://raw.githubusercontent.com/dean-yates/rtn-brand-assets/main/logos/RTN-Wordmark-Ink.svg`
 
 Placement:
 

@@ -12,15 +12,15 @@ Primary accent: Ledger Blue `#2B4A7C`. Dark surface `#142544`. Canvas `#FAF7F2` 
 
 ## Logo files
 
-Nine transparent-background PNGs across three variants and three sizes. Source: V1 green logo from rtn.digital, recoloured by alpha-preserved RGB replacement.
+Three transparent-background SVGs of the RTN wordmark (21 May 2026 redesign). Source: "RTN" hand-set in Fraunces, finalised after the logo-redesign exploration and signed off as canonical. SVG keeps the mark crisp at every size — no fixed PNG exports.
 
 | Variant | Hex | Use on |
 |---|---|---|
 | Blue | `#2B4A7C` | Warm cream / white surfaces. Default. |
-| White | `#FFFFFF` | Accent-deep dark surfaces |
-| Dark | `#1B1A17` | Monochrome contexts |
+| Cream | `#FAF7F2` | Dark surfaces (accent-deep navy, near-black ink) |
+| Ink | `#1B1A17` | Monochrome contexts (single-colour print, plain correspondence) |
 
-Sizes per variant: full (2560x1345), 1200px wide (1200x630), 600px wide (600x315).
+Aspect ratio: 5047×1581 (3.19:1). Export to PNG at the size needed if a tool requires raster.
 
 ## Icons
 
