@@ -24,7 +24,7 @@ Canonical files live in [`logo-redesign/svg/`](./logo-redesign/svg/):
 
 See [`logo-redesign/README.md`](./logo-redesign/README.md) for the working summary and outstanding refinement items, and [`logo-redesign/test-bench.html`](./logo-redesign/test-bench.html) ([live preview](https://htmlpreview.github.io/?https://github.com/dean-yates/rtn-brand-assets/blob/main/logo-redesign/test-bench.html)) for every variant rendered against the real V2 type system.
 
-The favicon (RTN on a Ledger Blue rounded square, two cuts) is a separate asset and still being produced.
+Favicon (RTN on a Ledger Blue rounded square, two cuts) lives alongside in `logo-redesign/svg/favicon-display.svg` and `logo-redesign/svg/favicon-small.svg`, with PNG fallbacks in `logo-redesign/png/`.
 
 ## Icons
 

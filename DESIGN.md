@@ -259,7 +259,14 @@ Use the monogram SVG alone (just RTN) on nav bars, footers, small interface plac
 
 ### Favicon
 
-Full "RTN" letters in Canvas cream on a Ledger Blue rounded square. Not a lone R (reads as any R-brand at favicon scale — Reddit, Roblox, R Studio, Rolls Royce). All three letters pin the brand. Two cuts: small-cut (16-32px) with letterforms re-cut tighter to stop bleeding, and display-cut (64-180px+) with proper Fraunces display forms. Still being produced — file paths will land in `logo-redesign/svg/` when done.
+Full "RTN" letters in Canvas cream on a Ledger Blue rounded square. Not a lone R (reads as any R-brand at favicon scale — Reddit, Roblox, R Studio, Rolls Royce). All three letters pin the brand.
+
+Two cuts:
+
+- `logo-redesign/svg/favicon-display.svg` — Fraunces opsz 144 weight 500 (display cut) for 64-180px+
+- `logo-redesign/svg/favicon-small.svg` — Fraunces opsz 9 weight 700 (small cut) for 16-32px where letterforms need extra weight to survive
+
+PNG raster fallbacks at 16/32/48/64/128/180/256 in `logo-redesign/png/` cover browsers with patchy SVG favicon support.
 
 ### Placement
 

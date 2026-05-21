@@ -7,6 +7,9 @@ The V2 logo system. Canonical decision record lives in Notion: [Logo design — 
 - `svg/rtn-wordmark-blue.svg` — Ledger Blue `#2B4A7C`. Brand-forward placement, hero sections, primary marketing surfaces.
 - `svg/rtn-wordmark-ink.svg` — Warm Ink `#1B1A17`. Default for Canvas or light surfaces — the everyday version.
 - `svg/rtn-wordmark-cream.svg` — Canvas Cream `#FAF7F2`. Reversed-out for use on Ledger Blue, Warm Ink, or photographic backgrounds.
+- `svg/favicon-display.svg` — favicon at display sizes (64-180px). RTN in Fraunces opsz 144 weight 500 on Ledger Blue rounded square, Canvas Cream letters.
+- `svg/favicon-small.svg` — favicon at small sizes (16-32px). RTN in Fraunces opsz 9 weight 700 — Fraunces's small optical cut at heavier weight for legibility at small reproductions.
+- `png/favicon-{16,32,48,64,128,180,256}.png` — PNG raster fallbacks at common favicon sizes, since browser SVG favicon support varies. 16/32/48 use the small cut; 64/128/180/256 use the display cut.
 - `test-bench.html` — single-file HTML test bench. Open in any browser to see Stacked Lockup D at proper scale with live Fraunces and Geist Mono from Google Fonts. Renders the master lockup, size cascade, monogram-only variants, favicons at 16/32/64/180px, a mock browser tab, and background context tests across Canvas, Ledger Blue, Warm Ink, and pure white. [View live via htmlpreview.github.io](https://htmlpreview.github.io/?https://github.com/dean-yates/rtn-brand-assets/blob/main/logo-redesign/test-bench.html).
 
 ## The mark in one paragraph
@@ -25,9 +28,9 @@ The favicon is a separate asset (still to be produced — see Outstanding) using
 
 Tracked against the Notion decision page. Status as of last commit:
 
-- [ ] Regenerate the three SVGs using Fraunces variable with the opsz axis pinned to 144 — current export is the static 500 cut at body weight (opsz 9), which renders chunky in live nav and footer use
-- [ ] Re-upload corrected SVGs to Webflow assets and re-swap on Navbar / Footer / Logo Component
-- [ ] Produce the two favicon exports (small-cut for 16-32px with hand-tightened letterforms, display-cut for 64-180px with proper Fraunces display forms) on Ledger Blue rounded square
+- [x] Regenerate the three SVGs using Fraunces variable with the opsz axis pinned to 144 — done programmatically via fontTools instancer at opsz=144 wght=500. Caveat: optical kerning between R-T and T-N is default font metrics, not hand-tuned. If brand-grade kerning is needed, open in a design tool and adjust pairs
+- [x] Re-upload corrected SVGs to Webflow assets and re-swap on Navbar / Footer / Logo Component
+- [x] Produce the two favicon exports (small-cut for 16-32px, display-cut for 64-180px) on Ledger Blue rounded square — SVG sources in `svg/favicon-small.svg` and `svg/favicon-display.svg`, PNG fallbacks in `png/favicon-{16,32,48,64,128,180,256}.png`
 - [ ] Optional — produce print-ready PDF/EPS variants for any future physical kit
 
 ## Working docs (Notion)
