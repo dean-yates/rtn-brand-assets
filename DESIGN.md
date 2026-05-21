@@ -233,7 +233,7 @@ Icons: simple line-based only, stroke weight 1.5-2px, in `{colors.accent}` or `{
 
 ## Logo
 
-The V2 logo system is a single stacked lockup. "RTN" set big in Fraunces display cut (opsz 144, weight 500), with "RUN THE NUMBERS®" set small underneath in Geist Mono uppercase, generously tracked (+200 to +250). RTN cap height roughly 5x the descriptor cap height. Optical spacing between lines about half the descriptor cap height. The ® symbol lives on "RUN THE NUMBERS", not on "RTN" — only the full registered string is protected. No border, no container shape.
+The V2 logo system is a single stacked lockup. "RTN" set big in Fraunces display cut (opsz 144, weight 500), with "RUN THE NUMBERS®" set small underneath in Geist uppercase, generously tracked (+200 to +250). RTN cap height roughly 5x the descriptor cap height. Optical spacing between lines about half the descriptor cap height. The ® symbol lives on "RUN THE NUMBERS", not on "RTN" — only the full registered string is protected. No border, no container shape.
 
 Canonical decision record: [Logo design — V2 wordmark (decided)](https://www.notion.so/3678c4a62c3b8181b8a9d5187a2562c4) (Notion). If anything here drifts from that page, Notion wins.
 
@@ -253,7 +253,7 @@ All three sit in `logo-redesign/svg/` of this repo. Canonical raw URLs:
 
 ### When to use the lockup vs the monogram
 
-Use the full composed lockup (RTN + descriptor) on hero sections, document covers, presentation title slides, large marketing surfaces — anywhere the descriptor is legible at its rendered size. Implement as live HTML/CSS using Fraunces + Geist Mono webfonts, not as a flattened SVG, so the descriptor stays inside the type system and reflows with context.
+Use the full composed lockup (RTN + descriptor) on hero sections, document covers, presentation title slides, large marketing surfaces — anywhere the descriptor is legible at its rendered size. Implement as live HTML/CSS using Fraunces + Geist webfonts, not as a flattened SVG, so the descriptor stays inside the type system and reflows with context.
 
 Use the monogram SVG alone (just RTN) on nav bars, footers, small interface placements, embroidery, app-icon contexts — anywhere the descriptor would be illegible or visually cluttered. Below roughly 32px wordmark height, always drop the descriptor.
 
