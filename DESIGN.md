@@ -3,7 +3,7 @@ version: alpha
 name: Run The Numbers
 description: |
   Specialist paid search agency for ecommerce and lead generation. Voice is straight-talking Yorkshireman;
-  visual identity is editorial and data-led — the "Ledger" system.
+  visual identity is editorial and data-led â the "Ledger" system.
   Think vintage accountancy ledger meets modern data dashboard: warm
   cream paper, narrow palette, one confident blue accent that earns
   its place. Archetypes: 70% Ruler (authority, control) + 30% Sage
@@ -141,7 +141,7 @@ components:
 
 ## Overview
 
-Run The Numbers® (RTN) is a UK specialist paid search agency for ecommerce and lead generation. The visual identity — codenamed "Ledger" — is editorial and data-led rather than decorative. Layouts feel like a vintage accountancy ledger reimagined for the screen: warm cream paper, left-aligned text, generous whitespace, and a single confident ledger blue accent used sparingly. Clean over clever. Data leads. Whitespace is authority. One idea per slide or section.
+Run The NumbersÂ® (RTN) is a UK specialist paid search agency for ecommerce and lead generation. The visual identity â codenamed "Ledger" â is editorial and data-led rather than decorative. Layouts feel like a vintage accountancy ledger reimagined for the screen: warm cream paper, left-aligned text, generous whitespace, and a single confident ledger blue accent used sparingly. Clean over clever. Data leads. Whitespace is authority. One idea per slide or section.
 
 Two archetypes guide every choice: 70% Ruler (authority, structure, control) and 30% Sage (wisdom, evidence, plain speech).
 
@@ -149,20 +149,20 @@ Two archetypes guide every choice: 70% Ruler (authority, structure, control) and
 
 The palette is deliberately narrow and warm. Ledger blue carries the brand. Dark ink carries the words. Cream carries the surface.
 
-- **accent (#2B4A7C) — Ledger Blue.** The one hero colour. Used for headlines, CTAs, data callouts, hyperlinks, bullet points, accents, and the logo. Never as a background fill for large areas.
+- **accent (#2B4A7C) â Ledger Blue.** The one hero colour. Used for headlines, CTAs, data callouts, hyperlinks, bullet points, accents, and the logo. Never as a background fill for large areas.
 - **accent-hover (#1E3A6C).** Darker state for interactive elements.
 - **accent-soft (#E6EEF9).** Light tint for hover backgrounds, selected states, soft tags.
 - **accent-deep (#142544).** Used for dark-mode surfaces and section dividers where the old gunmetal (#121212) was used.
 - **on-accent (#F5F1E8).** Warm off-white text for use on accent and accent-deep backgrounds.
-- **bg-canvas (#FAF7F2) — Warm Cream.** The default page background. Replaces pure white as the primary surface. Gives everything that ledger-paper warmth.
+- **bg-canvas (#FAF7F2) â Warm Cream.** The default page background. Replaces pure white as the primary surface. Gives everything that ledger-paper warmth.
 - **bg-surface (#FFFFFF).** Cards, inputs, and elements that sit on top of canvas.
 - **bg-raised (#F4EFE6).** Callout boxes, alternate table rows, subtle elevation without shadows.
 - **bg-sunken (#F0EAE0).** Inset areas, code blocks, secondary panels.
-- **text-primary (#1B1A17).** Headings and body copy. Warm near-black — never pure black (#000000).
+- **text-primary (#1B1A17).** Headings and body copy. Warm near-black â never pure black (#000000).
 - **text-secondary (#5C564B).** Captions, metadata, secondary copy.
 - **text-tertiary (#8C8478).** Placeholder text, disabled states, timestamps.
 - **border-subtle (#E8E1D3).** Dividers, table borders, card edges on canvas.
-- **border-strong (#C9C0AE).** More prominent separation — section dividers, active input borders.
+- **border-strong (#C9C0AE).** More prominent separation â section dividers, active input borders.
 
 Never mix more than three colours on a single surface.
 
@@ -170,22 +170,22 @@ Never mix more than three colours on a single surface.
 
 Two typeface families, plus a monospace for data.
 
-**Display and headings: Fraunces** — a variable serif with optical sizing (9-144), weight range 300-400, and a SOFT axis (30-50) that controls the quirkiness of the letterforms. Think editorial broadsheet meets vintage ledger. Fallback stack: Georgia → Times New Roman → serif.
+**Display and headings: Fraunces** â a variable serif with optical sizing (9-144), weight range 300-400, and a SOFT axis (30-50) that controls the quirkiness of the letterforms. Think editorial broadsheet meets vintage ledger. Fallback stack: Georgia â Times New Roman â serif.
 
-**Body and UI: Geist** — a clean geometric sans-serif from Vercel. Weights used: 400 (regular), 500 (medium for labels/buttons), 600 (semibold for H3 and emphasis). Fallback stack: Inter → -apple-system → sans-serif.
+**Body and UI: Geist** â a clean geometric sans-serif from Vercel. Weights used: 400 (regular), 500 (medium for labels/buttons), 600 (semibold for H3 and emphasis). Fallback stack: Inter â -apple-system â sans-serif.
 
-**Mono: JetBrains Mono** — for code snippets, data tables, account IDs, and anything that benefits from tabular alignment. Weights 400 and 500. Fallback: Fira Code → monospace.
+**Mono: JetBrains Mono** â for code snippets, data tables, account IDs, and anything that benefits from tabular alignment. Weights 400 and 500. Fallback: Fira Code â monospace.
 
 Roles:
 
-- **display** — the single biggest line on a page or slide. Fraunces at light weight with generous SOFT axis.
-- **h1 / h2** — section hierarchy in Fraunces. H2 is rendered in Ledger Blue in documents to signal a shift in level and reinforce brand.
-- **h3** — subheading in Geist SemiBold. The transition point from serif to sans.
-- **body-md** — default reading size in Geist; 1rem at 1.7 line-height for generous scan-ability.
-- **body-sm** — secondary text, dense tables, in Geist.
-- **caption** — footnotes, metadata, disclaimers, in Geist.
-- **mono** — code, IDs, numeric data, in JetBrains Mono.
-- **data-callout** — the hero number on a data slide. Always Ledger Blue. Always huge. Fraunces at light weight. Pair with one short line of context underneath.
+- **display** â the single biggest line on a page or slide. Fraunces at light weight with generous SOFT axis.
+- **h1 / h2** â section hierarchy in Fraunces. H2 is rendered in Ledger Blue in documents to signal a shift in level and reinforce brand.
+- **h3** â subheading in Geist SemiBold. The transition point from serif to sans.
+- **body-md** â default reading size in Geist; 1rem at 1.7 line-height for generous scan-ability.
+- **body-sm** â secondary text, dense tables, in Geist.
+- **caption** â footnotes, metadata, disclaimers, in Geist.
+- **mono** â code, IDs, numeric data, in JetBrains Mono.
+- **data-callout** â the hero number on a data slide. Always Ledger Blue. Always huge. Fraunces at light weight. Pair with one short line of context underneath.
 
 Context-specific sizing (document-native, not tokenised):
 
@@ -207,25 +207,25 @@ Spacing follows an 8px progression (xs 4 / sm 8 / md 16 / lg 24 / xl 32 / 2xl 48
 
 ## Shapes
 
-Soft corners, not sharp. The favicon container is a rounded rectangle — corners elsewhere follow the same instinct.
+Soft corners, not sharp. The favicon container is a rounded rectangle â corners elsewhere follow the same instinct.
 
-- `rounded.sm` (4px) — buttons, inputs, small chips, table corners.
-- `rounded.md` (8px) — cards, callout boxes, media frames.
-- `rounded.lg` (16px) — hero image masks, large feature blocks.
-- `rounded.pill` — tag chips, pill badges.
+- `rounded.sm` (4px) â buttons, inputs, small chips, table corners.
+- `rounded.md` (8px) â cards, callout boxes, media frames.
+- `rounded.lg` (16px) â hero image masks, large feature blocks.
+- `rounded.pill` â tag chips, pill badges.
 
-No drop shadows. No gradients. No inner glows. The brand reads flat and editorial. Depth comes from the warm/cool surface layering (canvas → surface → raised) and whitespace, not from effects.
+No drop shadows. No gradients. No inner glows. The brand reads flat and editorial. Depth comes from the warm/cool surface layering (canvas â surface â raised) and whitespace, not from effects.
 
 ## Components
 
-- **button-primary** — Ledger Blue background, warm off-white text. The main call-to-action. One primary per view.
-- **button-secondary** — transparent background, Ledger Blue text. Lower priority actions. Hover fills with accent-soft.
-- **link** — Ledger Blue with a matching underline. Never default browser blue.
-- **card** — white background on cream canvas, 8px radius, 24px internal padding. Content blocks.
-- **card-alt** — raised warm tone (#F4EFE6), otherwise identical. Used on white surfaces for subtle elevation without shadows.
-- **callout** — raised background with a 3px Ledger Blue left border, 16px padding. Used for pull-quotes, asides, warnings. No icon, no "NOTE:" label — the border signals the shift.
-- **input** — white background, 4px radius, 12px/16px padding, 1px subtle border. Ledger Blue focus ring.
-- **data-highlight** — the hero number treatment. Fraunces at light weight, Ledger Blue, huge (72pt+ in slides / 4.5rem+ on web), paired with one line of dark context underneath in Geist body-md.
+- **button-primary** â Ledger Blue background, warm off-white text. The main call-to-action. One primary per view.
+- **button-secondary** â transparent background, Ledger Blue text. Lower priority actions. Hover fills with accent-soft.
+- **link** â Ledger Blue with a matching underline. Never default browser blue.
+- **card** â white background on cream canvas, 8px radius, 24px internal padding. Content blocks.
+- **card-alt** â raised warm tone (#F4EFE6), otherwise identical. Used on white surfaces for subtle elevation without shadows.
+- **callout** â raised background with a 3px Ledger Blue left border, 16px padding. Used for pull-quotes, asides, warnings. No icon, no "NOTE:" label â the border signals the shift.
+- **input** â white background, 4px radius, 12px/16px padding, 1px subtle border. Ledger Blue focus ring.
+- **data-highlight** â the hero number treatment. Fraunces at light weight, Ledger Blue, huge (72pt+ in slides / 4.5rem+ on web), paired with one line of dark context underneath in Geist body-md.
 
 Charts and data visualisation: primary series uses `{colors.accent}`, secondary uses `{colors.text-primary}`, gridlines and axes use `{colors.border-subtle}`. No colourful palettes.
 
@@ -233,17 +233,31 @@ Icons: simple line-based only, stroke weight 1.5-2px, in `{colors.accent}` or `{
 
 ## Logo
 
-The V2 logo system is a single stacked lockup. "RTN" set big in Fraunces display cut (opsz 144, weight 500), with "RUN THE NUMBERS®" set small underneath in Geist uppercase, generously tracked (+200 to +250). RTN cap height roughly 5x the descriptor cap height. Optical spacing between lines about half the descriptor cap height. The ® symbol lives on "RUN THE NUMBERS", not on "RTN" — only the full registered string is protected. No border, no container shape.
+The V2 logo system is a single stacked lockup. "RTN" set big in Fraunces display cut (opsz 144, weight 500), with "RUN THE NUMBERSÂ®" set small underneath in Geist uppercase, generously tracked (+200 to +250). RTN cap height roughly 5x the descriptor cap height. Optical spacing between lines about half the descriptor cap height. The Â® symbol lives on "RUN THE NUMBERS", not on "RTN" â only the full registered string is protected. No border, no container shape.
 
-Canonical decision record: [Logo design — V2 wordmark (decided)](https://www.notion.so/3678c4a62c3b8181b8a9d5187a2562c4) (Notion). If anything here drifts from that page, Notion wins.
+Canonical decision record: [Logo design â V2 wordmark (decided)](https://www.notion.so/3678c4a62c3b8181b8a9d5187a2562c4) (Notion). If anything here drifts from that page, Notion wins.
 
 ### Asset structure
 
-The SVG assets contain only the RTN glyphs — the recognition mark. The descriptor is rendered live as type on surfaces that have room for it. Three colour variants:
+Two SVG variant sets are provided, each in three colour options. All sit in `logo-redesign/svg/` of this repo.
+
+**Monogram** (`rtn-wordmark-*.svg`) — RTN glyphs only, no descriptor text. The descriptor is rendered live as type on surfaces that have room for it.
 
 - `rtn-wordmark-ink.svg` (`#1B1A17`) — Warm Ink, default for Canvas / light surfaces (everyday version)
 - `rtn-wordmark-blue.svg` (`#2B4A7C`) — Ledger Blue, brand-forward placement, hero sections, primary marketing surfaces
 - `rtn-wordmark-cream.svg` (`#FAF7F2`) — Canvas Cream, reversed-out on Ledger Blue, Warm Ink, or photographic backgrounds
+
+**Full lockup** (`rtn-lockup-*.svg`) — RTN glyphs + “RUN THE NUMBERS®” descriptor, stacked. All paths baked into the SVG for contexts where live type isn’t available.
+
+- `rtn-lockup-ink.svg` (`#1B1A17`) — Warm Ink
+- `rtn-lockup-blue.svg` (`#2B4A7C`) — Ledger Blue
+- `rtn-lockup-cream.svg` (`#FAF7F2`) — Canvas Cream
+
+Canonical raw URLs (monogram):
+
+- Ink:   `https://raw.githubusercontent.com/dean-yates/rtn-brand-assets/main/logo-redesign/svg/rtn-wordmark-ink.svg`
+- Blue:  `https://raw.githubusercontent.com/dean-yates/rtn-brand-assets/main/logo-redesign/svg/rtn-wordmark-blue.svg`
+- Cream: `https://raw.githubusercontent.com/dean-yates/rtn-brand-assets/main/logo-redesign/svg/rtn-wordmark-cream.svg` (`#FAF7F2`) â Canvas Cream, reversed-out on Ledger Blue, Warm Ink, or photographic backgrounds
 
 All three sit in `logo-redesign/svg/` of this repo. Canonical raw URLs:
 
@@ -253,18 +267,18 @@ All three sit in `logo-redesign/svg/` of this repo. Canonical raw URLs:
 
 ### When to use the lockup vs the monogram
 
-Use the full composed lockup (RTN + descriptor) on hero sections, document covers, presentation title slides, large marketing surfaces — anywhere the descriptor is legible at its rendered size. Implement as live HTML/CSS using Fraunces + Geist webfonts, not as a flattened SVG, so the descriptor stays inside the type system and reflows with context.
+Use the full composed lockup (RTN + descriptor) on hero sections, document covers, presentation title slides, large marketing surfaces â anywhere the descriptor is legible at its rendered size. Implement as live HTML/CSS using Fraunces + Geist webfonts, not as a flattened SVG, so the descriptor stays inside the type system and reflows with context.
 
-Use the monogram SVG alone (just RTN) on nav bars, footers, small interface placements, embroidery, app-icon contexts — anywhere the descriptor would be illegible or visually cluttered. Below roughly 32px wordmark height, always drop the descriptor.
+Use the monogram SVG alone (just RTN) on nav bars, footers, small interface placements, embroidery, app-icon contexts â anywhere the descriptor would be illegible or visually cluttered. Below roughly 32px wordmark height, always drop the descriptor.
 
 ### Favicon
 
-Full "RTN" letters in Canvas cream on a Ledger Blue rounded square. Not a lone R (reads as any R-brand at favicon scale — Reddit, Roblox, R Studio, Rolls Royce). All three letters pin the brand.
+Full "RTN" letters in Canvas cream on a Ledger Blue rounded square. Not a lone R (reads as any R-brand at favicon scale â Reddit, Roblox, R Studio, Rolls Royce). All three letters pin the brand.
 
 Two cuts:
 
-- `logo-redesign/svg/favicon-display.svg` — Fraunces opsz 144 weight 500 (display cut) for 64-180px+
-- `logo-redesign/svg/favicon-small.svg` — Fraunces opsz 9 weight 700 (small cut) for 16-32px where letterforms need extra weight to survive
+- `logo-redesign/svg/favicon-display.svg` â Fraunces opsz 144 weight 500 (display cut) for 64-180px+
+- `logo-redesign/svg/favicon-small.svg` â Fraunces opsz 9 weight 700 (small cut) for 16-32px where letterforms need extra weight to survive
 
 PNG raster fallbacks at 16/32/48/64/128/180/256 in `logo-redesign/png/` cover browsers with patchy SVG favicon support.
 
@@ -293,26 +307,26 @@ Never:
 **Do**
 
 - Use Ledger Blue sparingly. One accent per slide or section is enough.
-- Lead with the number when presenting data. Make it huge, blue, alone — in Fraunces.
+- Lead with the number when presenting data. Make it huge, blue, alone â in Fraunces.
 - Use the warm cream canvas (#FAF7F2) as the default background, not pure white.
 - Use whitespace generously. Cramped layouts signal desperation.
 - Write in fragments on slides. Max 30 words per slide (excluding labels).
 - Pair Fraunces (headings) with Geist (body). This is the only approved pairing.
 - Anonymise client names unless permission is explicitly given.
-- Apply the registered trademark (RTN® or Run The Numbers®) on first mention per document.
+- Apply the registered trademark (RTNÂ® or Run The NumbersÂ®) on first mention per document.
 
 **Don't**
 
 - Don't use pure black (#000000) anywhere. Always text-primary (#1B1A17).
 - Don't use pure white (#FFFFFF) as a page background. Always bg-canvas (#FAF7F2) for the outermost surface. White is for cards and inputs sitting on top of canvas.
 - Don't use Ledger Blue (#2B4A7C) as a large background fill. It's an accent. Use accent-deep (#142544) for dark sections.
-- Don't use the old V1 green (#1aa260) or gunmetal (#121212) — those are retired.
-- Don't use Nourd — it has been replaced by Fraunces + Geist.
+- Don't use the old V1 green (#1aa260) or gunmetal (#121212) â those are retired.
+- Don't use Nourd â it has been replaced by Fraunces + Geist.
 - Don't mix more than three colours on a single surface.
 - Don't use stock photography of handshakes, pointing at screens, or generic "business people".
 - Don't use clip-art, drop shadows, gradients, or skeuomorphic effects.
 - Don't use emojis in branded deliverables.
 - Don't use any of these phrases: "it's never been easier/harder", "here's the truth", "nobody tells you", "in a world where", "game-changer", "unlock", "leverage" (as a verb), "deep dive", "low-hanging fruit", "synergy", "best-in-class", "seamless", "empower", "cutting-edge", "revolutionise", "holistic".
 - Don't mix font families beyond the Fraunces + Geist pairing within a document.
-- Don't use default Word or Excel table styling — always Ledger Blue header row, warm raised (#F4EFE6) zebra striping, subtle borders (#E8E1D3).
+- Don't use default Word or Excel table styling â always Ledger Blue header row, warm raised (#F4EFE6) zebra striping, subtle borders (#E8E1D3).
 - Don't stretch, distort, recolour, or add effects to the logo.
