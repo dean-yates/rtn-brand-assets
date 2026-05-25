@@ -233,54 +233,41 @@ Icons: simple line-based only, stroke weight 1.5-2px, in `{colors.accent}` or `{
 
 ## Logo
 
-The V2 logo system is a single stacked lockup. "RTN" set big in Fraunces display cut (opsz 144, weight 500), with "RUN THE NUMBERSÂ®" set small underneath in Geist uppercase, generously tracked (+200 to +250). RTN cap height roughly 5x the descriptor cap height. Optical spacing between lines about half the descriptor cap height. The Â® symbol lives on "RUN THE NUMBERS", not on "RTN" â only the full registered string is protected. No border, no container shape.
+The V2 logo is a monogram. "RTN" set in Fraunces variable at weight 700, opsz 144, SOFT 0, WONK 0. The variable axes are pinned so the mark is deterministic across rebuilds. The display cut (opsz 144) is non-negotiable: the body cut (opsz 9) renders chunky and loses the high-contrast strokes that make Fraunces feel like Fraunces. No descriptor baked into the SVG, no border, no container shape.
 
-Canonical decision record: [Logo design â V2 wordmark (decided)](https://www.notion.so/3678c4a62c3b8181b8a9d5187a2562c4) (Notion). If anything here drifts from that page, Notion wins.
+The full "RUN THE NUMBERS®" descriptor is not exported as a flattened asset. It gets composed live in HTML/CSS using Fraunces and Geist on the surfaces that need it — hero sections, document covers, presentation title slides. Composition rules: "RTN" in Fraunces variable at weight 500, opsz 144, letter-spacing 0.05em. "RUN THE NUMBERS®" underneath in Geist (not Mono), weight 500, uppercase, letter-spacing 0.5em. RTN cap height roughly 5x the descriptor cap height. Optical spacing between the two lines about half the descriptor cap height. The ® lives on the descriptor only — never on the three-letter monogram, because only the full registered string "Run The Numbers®" is protected.
+
+Canonical decision record: [Logo design — V2 wordmark (decided)](https://www.notion.so/3678c4a62c3b8181b8a9d5187a2562c4) (Notion). If anything here drifts from that page, Notion wins.
 
 ### Asset structure
 
-Two SVG variant sets are provided, each in three colour options. All sit in `logo-redesign/svg/` of this repo.
+Everything lives in `logo-redesign/` of this repo.
 
-**Monogram** (`rtn-wordmark-*.svg`) — RTN glyphs only, no descriptor text. The descriptor is rendered live as type on surfaces that have room for it.
+**SVGs (5 variants)** — `logo-redesign/svg/`. Monogram-only, no descriptor.
 
-- `rtn-wordmark-ink.svg` (`#1B1A17`) — Warm Ink, default for Canvas / light surfaces (everyday version)
-- `rtn-wordmark-blue.svg` (`#2B4A7C`) — Ledger Blue, brand-forward placement, hero sections, primary marketing surfaces
-- `rtn-wordmark-cream.svg` (`#FAF7F2`) — Canvas Cream, reversed-out on Ledger Blue, Warm Ink, or photographic backgrounds
+- `RTN_Logo_Warm_Ink.svg` (`#1B1A17`) — Warm Ink. Default for Canvas Cream or other light surfaces. The everyday version.
+- `RTN_Logo_Ledger_Blue.svg` (`#2B4A7C`) — Ledger Blue. Brand-forward placement: hero sections, primary marketing surfaces.
+- `RTN_Logo_Canvas_Cream.svg` (`#FAF7F2`) — Canvas Cream. Reversed out for use on Ledger Blue, Warm Ink, or photographic backgrounds.
+- `RTN_Logo_Black.svg` (`#000000`) — Pure black. For mono print, faxes, situations where colour fidelity isn't guaranteed.
+- `RTN_Logo_White.svg` (`#FFFFFF`) — Pure white. For dark backgrounds where Canvas Cream washes out.
 
-**Full lockup** (`rtn-lockup-*.svg`) — RTN glyphs + “RUN THE NUMBERS®” descriptor, stacked. All paths baked into the SVG for contexts where live type isn’t available.
+**PNG raster fallbacks (9 files)** — `logo-redesign/png/`. Three sizes (X1, X2, X4) for each of the three brand-coloured variants: Ledger Blue, Canvas Cream, Warm Ink. Naming: `RTN_Logo_{Variant}_{Size}.png` (e.g. `RTN_Logo_Ledger_Blue_X2.png`). Black and White PNGs are a known gap, tracked separately.
 
-- `rtn-lockup-ink.svg` (`#1B1A17`) — Warm Ink
-- `rtn-lockup-blue.svg` (`#2B4A7C`) — Ledger Blue
-- `rtn-lockup-cream.svg` (`#FAF7F2`) — Canvas Cream
+Use SVG by default. PNGs are for placements that can't take vector: email signatures, some document embeds, social profile pictures, third-party platforms with patchy SVG support.
 
-Canonical raw URLs (monogram):
-
-- Ink:   `https://raw.githubusercontent.com/dean-yates/rtn-brand-assets/main/logo-redesign/svg/rtn-wordmark-ink.svg`
-- Blue:  `https://raw.githubusercontent.com/dean-yates/rtn-brand-assets/main/logo-redesign/svg/rtn-wordmark-blue.svg`
-- Cream: `https://raw.githubusercontent.com/dean-yates/rtn-brand-assets/main/logo-redesign/svg/rtn-wordmark-cream.svg` (`#FAF7F2`) â Canvas Cream, reversed-out on Ledger Blue, Warm Ink, or photographic backgrounds
-
-All three sit in `logo-redesign/svg/` of this repo. Canonical raw URLs:
-
-- Ink:   `https://raw.githubusercontent.com/dean-yates/rtn-brand-assets/main/logo-redesign/svg/rtn-wordmark-ink.svg`
-- Blue:  `https://raw.githubusercontent.com/dean-yates/rtn-brand-assets/main/logo-redesign/svg/rtn-wordmark-blue.svg`
-- Cream: `https://raw.githubusercontent.com/dean-yates/rtn-brand-assets/main/logo-redesign/svg/rtn-wordmark-cream.svg`
+Canonical raw URL pattern: `https://raw.githubusercontent.com/dean-yates/rtn-brand-assets/main/logo-redesign/svg/RTN_Logo_{Variant}.svg`.
 
 ### When to use the lockup vs the monogram
 
-Use the full composed lockup (RTN + descriptor) on hero sections, document covers, presentation title slides, large marketing surfaces â anywhere the descriptor is legible at its rendered size. Implement as live HTML/CSS using Fraunces + Geist webfonts, not as a flattened SVG, so the descriptor stays inside the type system and reflows with context.
+Use the live-composed lockup (RTN + descriptor) on hero sections, document covers, presentation title slides, large marketing surfaces — anywhere the descriptor is legible at its rendered size. Implement as live HTML/CSS using Fraunces + Geist webfonts, not as a flattened SVG, so the descriptor stays inside the type system and reflows with context.
 
-Use the monogram SVG alone (just RTN) on nav bars, footers, small interface placements, embroidery, app-icon contexts â anywhere the descriptor would be illegible or visually cluttered. Below roughly 32px wordmark height, always drop the descriptor.
+Use a monogram SVG alone on nav bars, footers, small interface placements, embroidery, app-icon contexts — anywhere the descriptor would be illegible or visually cluttered. Below roughly 32px wordmark height, always drop the descriptor.
 
 ### Favicon
 
-Full "RTN" letters in Canvas cream on a Ledger Blue rounded square. Not a lone R (reads as any R-brand at favicon scale â Reddit, Roblox, R Studio, Rolls Royce). All three letters pin the brand.
+Currently a known gap. The previous `favicon-{display,small}.svg` and PNG pack (16, 32, 48, 64, 128, 180, 256) were deleted in the 2026-05-25 clean replacement. Regeneration is tracked as a separate task.
 
-Two cuts:
-
-- `logo-redesign/svg/favicon-display.svg` â Fraunces opsz 144 weight 500 (display cut) for 64-180px+
-- `logo-redesign/svg/favicon-small.svg` â Fraunces opsz 9 weight 700 (small cut) for 16-32px where letterforms need extra weight to survive
-
-PNG raster fallbacks at 16/32/48/64/128/180/256 in `logo-redesign/png/` cover browsers with patchy SVG favicon support.
+Spec stays: full "RTN" letters in Canvas Cream on a Ledger Blue rounded square. Not a lone R (reads as any R-brand at favicon scale — Reddit, Roblox, R Studio, Rolls Royce). All three letters pin the brand. Two cuts needed: a display cut (Fraunces opsz 144 weight 500) for 64-180px+ contexts including home-screen icons and PWA install, and a small cut (Fraunces opsz 9 weight 700) for 16-32px where letterforms need extra weight to survive. PNG raster fallbacks at 16/32/48/64/128/180/256 cover browsers with patchy SVG favicon support.
 
 ### Placement
 
@@ -295,12 +282,13 @@ PNG raster fallbacks at 16/32/48/64/128/180/256 in `logo-redesign/png/` cover br
 Never:
 
 - Stretch, distort, skew, or rotate the logo.
-- Recolour outside the three approved variants.
+- Recolour outside the five approved variants.
 - Add shadows, glows, gradients, or any effects.
 - Place on a busy or cluttered background.
 - Use smaller than 0.5" wide (or 80px on web).
 - Reduce opacity below 100%.
 - Replace with a text-based placeholder when logo files are accessible.
+- Bake the "RUN THE NUMBERS®" descriptor into a fresh SVG. Always compose it live in HTML/CSS.
 
 ## Do's and Don'ts
 
