@@ -24,7 +24,7 @@ Use SVG by default. PNGs are for placements that can't take vector (email signat
 
 ## The mark in one paragraph
 
-A single stacked lockup. "RTN" set big in Fraunces display cut (opsz 144, weight 500), with "RUN THE NUMBERS®" set small underneath in Geist Mono uppercase, generously tracked. RTN cap height roughly 5x the descriptor cap height. ® lives on the full descriptor string, never on the three-letter mark. No border, no container.
+A single stacked lockup. "RTN" set big in Fraunces display cut (opsz 144, weight 500), with "RUN THE NUMBERS®" set small underneath in Geist uppercase, generously tracked. RTN cap height roughly 5x the descriptor cap height. ® lives on the full descriptor string, never on the three-letter mark. No border, no container.
 
 ## Working docs (Notion)
 
