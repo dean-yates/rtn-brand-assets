@@ -301,7 +301,7 @@ Never:
 - Write in fragments on slides. Max 30 words per slide (excluding labels).
 - Pair Fraunces (headings) with Geist (body). This is the only approved pairing.
 - Anonymise client names unless permission is explicitly given.
-- Apply the registered trademark (RTN® or Run The Numbers®) on first mention per document.
+- Brand naming. Use the full "Run The Numbers®" (with the registered mark) on first mention per page or document, in the footer copyright, and in high-impact moments where the full name earns its weight (homepage hero, case study titles). After first mention, "RTN" is fine throughout, including on the public site — it reads cleaner and avoids repetition. The ® belongs only to the full "Run The Numbers®" string, never to the RTN monogram. "Free Audit" has no registered mark. "RTN Digital" is the legal entity only and never appears as the public-facing brand.
 
 **Don't**
 
