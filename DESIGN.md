@@ -233,6 +233,8 @@ Icons: simple line-based only, stroke weight 1.5-2px, in `{colors.accent}` or `{
 
 ## Logo
 
+> **Hard rule — never fake the logo.** Never substitute a hand-built text or CSS approximation of the monogram for the official SVG. Pull the real asset from `logo-redesign/svg/RTN_Logo_{Variant}.svg` (canonical raw URL below) and use it. Composing the full "RUN THE NUMBERS®" lockup live in HTML/CSS is fine and expected; faking the "RTN" mark itself with typed letters is not. A text-placeholder logo on any deliverable is a bug.
+
 The V2 logo is a monogram. "RTN" set in Fraunces variable at weight 700, opsz 144, SOFT 0, WONK 0. The variable axes are pinned so the mark is deterministic across rebuilds. The display cut (opsz 144) is non-negotiable: the body cut (opsz 9) renders chunky and loses the high-contrast strokes that make Fraunces feel like Fraunces. No descriptor baked into the SVG, no border, no container shape.
 
 The full "RUN THE NUMBERS®" descriptor is not exported as a flattened asset. It gets composed live in HTML/CSS using Fraunces and Geist on the surfaces that need it — hero sections, document covers, presentation title slides. Composition rules: "RTN" in Fraunces variable at weight 500, opsz 144, letter-spacing 0.05em. "RUN THE NUMBERS®" underneath in Geist (not Mono), weight 500, uppercase, letter-spacing 0.5em. RTN cap height roughly 5x the descriptor cap height. Optical spacing between the two lines about half the descriptor cap height. The ® lives on the descriptor only — never on the three-letter monogram, because only the full registered string "Run The Numbers®" is protected.
